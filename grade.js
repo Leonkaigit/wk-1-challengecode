@@ -1,5 +1,5 @@
 function testGrade(points) {
-    
+    // input of points is evaluated to determine appropriate grade
         
 
         if( points >= 0 && points < 40) {
@@ -23,9 +23,9 @@ function testGrade(points) {
         }
             
         }
-        const Input =prompt("Enter Points awarded.");
-        const points = parseInt(Input);
-        const grade = testGrade(points);
+        const Input =prompt("Enter Points awarded."); // prompts input of points
+        const points = parseInt(Input);// converts user input within a string into an integer
+        const grade = testGrade(points);//invokes the testGrade function
         console.log(grade);       
     
 

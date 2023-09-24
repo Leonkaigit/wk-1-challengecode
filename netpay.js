@@ -99,18 +99,18 @@ function calculateNhif(salary) {//Calculate the Nhif deductions as per Basic sal
         return "Nhif not contributed."
     }
 }
-
 function calculateNssf(salary) {// calculates nssf deductions
     nssf = salary * 0.06;
-    return nssf;
+    return nssf
+;
 
 }
-function calculateHouseLevy(salary) {// calculates house levy
+function calculateNssf(salary) {// calculates nssf deductions
     houselevy = salary * 0.015;
     return houselevy;
 }
 
-function calculateNetSalary(salary) {
+function calculateNetSalary(salary) { //equating constant variables to the functions evaluating their respective values once input.
     const payee = calculateTax(salary);
     const nhif = calculateNhif(salary);
     const nssf = calculateNssf(salary);
